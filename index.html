@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Untuk Pacarku</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Hai Sayangku! ❤️</h1>
+        <p>Selamat datang di website spesial yang kubuat hanya untukmu!</p>
+    </header>
+
+    <section class="intro">
+        <img src="image/1.jpeg" alt="Foto kita berdua" class="profile-pic">
+        <p>Kamu adalah orang teristimewa di hidupku, dan aku ingin menghiburmu dengan halaman ini.</p>
+    </section>
+
+    <section class="love-messages">
+        <h2>Pesan Cinta untuk Kamu</h2>
+        <ul>
+            <li>Kamu selalu membuatku tersenyum. 😊</li>
+            <li>Aku bersyukur punya kamu di hidupku. 🌸</li>
+            <li>Aku cinta kamu lebih dari apapun. 💕</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Website ini dibuat dengan cinta oleh aku, khusus untuk kamu. 🌹</p>
+    </footer>
+</body>
+</html>
+
+
+<audio controls autoplay loop>
+    <source src="audio/1.mp3" type="audio/mpeg">
+    Browser kamu tidak mendukung pemutar audio.
+  </audio>
+  
+
+  <section class="photo-gallery">
+    <h2>Kenangan Kita</h2>
+    <div class="gallery">
+        <img src="image/1.jpeg" alt="Foto 1">
+        <img src="image/2.jpeg" alt="Foto 2">
+        <img src="image/3.jpeg" alt="Foto 3">
+    </div>
+</section>
+
+
+<section class="send-love">
+    <button onclick="sendLove()">Kirim Cinta 💌</button>
+    <p id="loveMessage" style="display:none;">Cinta telah terkirim! ❤️</p>
+</section>
+
+
+<script>
+    function sendLove() {
+        var message = document.getElementById("loveMessage");
+        message.style.display = "block";
+        message.classList.add("animate-message");
+    }
+    </script>
+    
+
+    <script>
+        function randomMessage() {
+            const messages = [
+                "Kamu adalah cahaya hidupku! 🌟",
+                "Aku sangat bersyukur memilikimu! 💕",
+                "Selalu ada cinta untukmu di hatiku. 💖",
+                "Hari-hariku selalu indah karenamu. 🌷",
+                "Aku mencintaimu lebih dari kata-kata bisa ungkapkan! 😘"
+            ];
+    
+            const randomIndex = Math.floor(Math.random() * messages.length);
+            document.getElementById("randomMessage").innerHTML = messages[randomIndex];
+        }
+    
+        window.onload = randomMessage;
+    </script>
+
+
+<section class="random-message">
+    <h2>Pesan untukmu hari ini:</h2>
+    <p id="randomMessage"></p>
+</section>
+
+
+<script>
+    function countdown() {
+        const eventDate = new Date("2024-12-31T00:00:00").getTime(); // Ganti dengan tanggal spesial
+        const now = new Date().getTime();
+        const distance = eventDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        if (distance < 0) {
+            document.getElementById("countdown").innerHTML = "Waktunya tiba!";
+        }
+    }
+
+    setInterval(countdown, 1000);
+</script>
+
+
+<section class="countdown">
+    <h2>Hitung Mundur ke Hari Spesial Kita:</h2>
+    <p id="countdown"></p>
+</section>
+
+
+<section class="secret-letter">
+    <button onclick="revealSecret()">Buka Surat Rahasia 💌</button>
+    <p id="secretMessage" style="display:none;">Ini adalah pesan rahasia yang sangat panjang untukmu, yang hanya bisa kamu buka ketika kamu merasa sangat spesial. Terima kasih karena selalu ada untukku! Aku sangat mencintaimu! 💖</p>
+</section>
+
+
+<script>
+    function revealSecret() {
+        var message = document.getElementById("secretMessage");
+        message.style.display = "block";
+    }
+    </script>
+    
+
+    <img src="image/1.jpeg" alt="Foto kita" loading="lazy">
+
+
+ <section class="thanks-form">
+        <h2>Kirim Balasan Ucapan:</h2>
+        <form action="#">
+            <input type="text" placeholder="Tulis ucapanmu di sini..." required>
+            <button type="submit">Kirim</button>
+        </form>
+</section>
+    
+
+<section class="social-media">
+        <h2>Ikuti Aku di Media Sosial</h2>
+        <a href="https://instagram.com/kiiwwill_" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" class="social-icon">
+        </a>
+</section>
+    
+
+<section class="parallax">
+    <div class="parallax-content">
+        <h2>Kenangan Manis Kita</h2>
+        <p>Setiap saat bersama kamu terasa begitu spesial.</p>
+    </div>
+</section>
+
+
+<img src="image/4.jpeg" alt="Foto kita berdua saat liburan">
+
+
+<section class="map">
+    <h2>Tempat Spesial Kita</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.940073232013!2d-122.08424968469277!3d37.42199997982116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba02ed96c703%3A0xdb3c7897f0b2b1b4!2sGoogleplex!5e0!3m2!1sid!2sid!4v1621684692869!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+
+<button onclick="toggleDarkMode()" class="dark-mode-toggle">Mode Gelap</button>
+
+
+<script>
+    function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+    }
+    </script>
+
+
+<meta name="description" content="Website cinta yang dibuat untuk pacar tersayang.">
+<meta name="keywords" content="cinta, website, pacar, romantis">
+
+
+<form action="mailto:putrazulfaih12345@gmail.com" method="post" enctype="text/plain">
+    <label for="name">Nama:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="message">Pesan:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+    <button type="submit">Kirim Pesan</button>
+  </form>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'YOUR_TRACKING_ID');
+</script>

@@ -1,0 +1,393 @@
+/* Gaya dasar */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fdf5e6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #ffcccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #ff69b4;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Gaya untuk section intro */
+.intro {
+    margin: 40px 0;
+}
+
+.intro .profile-pic {
+    border-radius: 50%;
+    border: 5px solid #ff69b4;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #777;
+}
+
+/* Pesan Cinta */
+.love-messages {
+    background-color: #ffebcc;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 40px;
+}
+
+.love-messages h2 {
+    color: #ff6347;
+}
+
+.love-messages ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.love-messages ul li {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #ffcccc;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1em;
+    color: #555;
+}
+
+
+/* Animasi pada judul */
+header h1 {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        color: #ff69b4;
+    }
+    50% {
+        transform: scale(1.1);
+        color: #ff1493;
+    }
+    100% {
+        transform: scale(1);
+        color: #ff69b4;
+    }
+}
+
+
+/* Animasi pada gambar profil */
+.intro .profile-pic {
+    animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.intro .profile-pic:hover {
+    transform: rotate(10deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.photo-gallery {
+    margin: 40px 0;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.gallery img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Animasi untuk pesan yang dikirim */
+#loveMessage.animate-message {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    .gallery img {
+        width: 100px;
+        height: 100px;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+}
+
+
+.random-message {
+    margin: 30px 0;
+    background-color: #ffebf0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.random-message h2 {
+    color: #ff1493;
+}
+
+.random-message p {
+    font-size: 1.5em;
+    color: #333;
+}
+
+
+.countdown {
+    background-color: #ffebcc;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.countdown h2 {
+    color: #ff6347;
+}
+
+.countdown p {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ff4500;
+}
+
+
+.secret-letter {
+    margin: 30px 0;
+}
+
+.secret-letter button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.secret-letter button:hover {
+    background-color: #ff1493;
+}
+
+.secret-letter p {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #333;
+    background-color: #ffe4e1;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.thanks-form {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+}
+
+.thanks-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.thanks-form input {
+    padding: 10px;
+    font-size: 1.2em;
+    border: 2px solid #ff69b4;
+    border-radius: 5px;
+}
+
+.thanks-form button {
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.thanks-form button:hover {
+    background-color: #ff1493;
+}
+
+
+.social-media {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.social-media h2 {
+    font-size: 1.5em;
+    color: #ff6347;
+}
+
+.social-media a {
+    margin: 0 15px;
+}
+
+.social-media .social-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-media .social-icon:hover {
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .intro img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .love-messages ul li {
+        font-size: 1em;
+    }
+
+    .gallery img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .thanks-form input, .thanks-form button {
+        font-size: 1em;
+    }
+
+    .countdown p {
+        font-size: 1.5em;
+    }
+}
+
+
+.parallax {
+    background-image: url('https://via.placeholder.com/1920x1080');
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.parallax-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.parallax-content p {
+    font-size: 1.2em;
+    width: 80%;
+    max-width: 600px;
+}
+
+
+.map {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.map iframe {
+    width: 80%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode header {
+    background-color: #444;
+}
+
+.dark-mode .love-messages {
+    background-color: #555;
+}
+
+.dark-mode .thanks-form input, .dark-mode .thanks-form button {
+    background-color: #444;
+    color: white;
+}
+
+.dark-mode .gallery img {
+    border: 2px solid #444;
+}
+
+.dark-mode .social-media a {
+    background-color: #555;
+}
